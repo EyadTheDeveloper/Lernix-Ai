@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Lernix 🥞</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Tajawal', 'sans-serif'],
+            },
+            colors: {
+              pancake: {
+                50: '#FFFBEB',
+                100: '#FEF3C7',
+                200: '#FDE68A',
+                300: '#FCD34D',
+                400: '#FBBF24',
+                500: '#F59E0B',
+                600: '#D97706',
+                700: '#B45309',
+                800: '#92400E',
+                900: '#78350F',
+              }
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      body {
+        background-color: #FFFBEB; /* pancake-50 */
+        font-family: 'Tajawal', sans-serif;
+      }
+      /* Hide scrollbar for Chrome, Safari and Opera */
+      .no-scrollbar::-webkit-scrollbar {
+          display: none;
+      }
+      /* Hide scrollbar for IE, Edge and Firefox */
+      .no-scrollbar {
+          -ms-overflow-style: none;  /* IE and Edge */
+          scrollbar-width: none;  /* Firefox */
+      }
+      
+      /* Print styles for PDF generation */
+      .print-content {
+        font-family: 'Tajawal', sans-serif !important;
+      }
+      .print-content h1 { color: #D97706; font-size: 24px; font-weight: 800; margin-bottom: 16px; }
+      .print-content h2 { color: #B45309; font-size: 20px; font-weight: 700; margin-top: 16px; margin-bottom: 12px; border-bottom: 2px solid #FEF3C7; padding-bottom: 4px; }
+      .print-content h3 { color: #92400E; font-size: 18px; font-weight: 600; margin-top: 12px; }
+      .print-content p { color: #374151; line-height: 1.6; margin-bottom: 10px; font-size: 14px; }
+      .print-content ul { list-style-type: disc; margin-right: 20px; margin-bottom: 12px; }
+      .print-content li { margin-bottom: 6px; }
+      .print-content strong { color: #78350F; }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://esm.sh/@google/genai@^1.40.0",
+    "react-markdown": "https://esm.sh/react-markdown@^10.1.0",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
